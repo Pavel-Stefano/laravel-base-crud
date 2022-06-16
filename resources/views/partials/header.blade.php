@@ -13,21 +13,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">
+            <a class="nav-link" {{Route::currentRouteName()=='home' ? 'active' : ''}} aria-current="page" href="{{ route('home')}}">
               Home
               <div class="overflow"></div>
             </a>
             
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/comics">
+            <a class="nav-link" {{Route::currentRouteName()=='comics.index' ? 'active' : ''}} href="{{ route('comics.index')}}">
               Fumetti
               <div class="overflow"></div>
             </a>
             
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/comics/create">
+            <a class="nav-link" {{Route::currentRouteName()=='comics.create' ? 'active' : ''}} href="{{ route('comics.create')}}">
               Aggiungi fumetto
               <div class="overflow"></div>
             </a>

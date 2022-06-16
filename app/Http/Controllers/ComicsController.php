@@ -14,8 +14,8 @@ class ComicsController extends Controller
      */
     public function index()
     {
-        $fumetti = Comic::all();
-        return view('comics.index', compact('fumetti'));
+        $comics = Comic::all();
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -36,7 +36,21 @@ class ComicsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dump($request);
+        $data = $request->all();
+        dump($data);
+
+        $newComic = new Comic();
+        $newComic->title =$data['title'];
+        $newComic->description =$data['description'];
+        $newComic->thumb =$data['thumb'];
+        $newComic->price =$data['price'];
+        $newComic->series =$data['series'];
+        $newComic->sale_date =$data['sale_date'];
+        $newComic->type =$data['type'];
+        $newComic->save();
+
+        return redirect()->route('comics.show', $newComic->id);
     }
 
     /**
@@ -47,9 +61,9 @@ class ComicsController extends Controller
      */
     public function show($id)
     {
-        $fumetto = Comic::findOrFail($id);
+        $comic = Comic::findOrFail($id);
 
-        return view('comics.show', compact('fumetto'));
+        return view('comics.show', compact('comic'));
     }
 
     /**
@@ -60,7 +74,8 @@ class ComicsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        return view('comics.edit', compact('comic'));
     }
 
     /**

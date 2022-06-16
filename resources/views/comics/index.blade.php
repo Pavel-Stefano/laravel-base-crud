@@ -8,14 +8,15 @@
     
         <div id="index_container" class="container">
             <button class="btn btn-ab">Current series</button>
-            @foreach ($fumetti as $fumetto)
+            @foreach ($comics as $comic)
             <div class="card">
-                <a href="{{ route('comics.show', $fumetto->id)}}">
-                    <img src="{{$fumetto->thumb}}" alt="{{$fumetto->title}}">
+                <a href="{{ route('comics.show', $comic->id)}}">
+                    <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
                     <div class="card-content">
-                        <h5>{{$fumetto->series}}</h5>
-                        <p>{{$fumetto->title}}</p>
-                        <span>Price:{{$fumetto->price}}</span>
+                        <h5>{{$comic->series}}</h5>
+                        <p>{{$comic->title}}</p>
+                        <span>Price:{{$comic->price}}</span>
+                        <a href="{{route('comics.edit', $comic->id)}}">MODIFICA</a>
                     </div>
                 </a>
             </div>         
