@@ -20642,13 +20642,10 @@ h2, .h2 {
   color: #fff;
 }
 
-.card-content p {
-  color: #0282f9;
-}
-
 .fumetto {
   height: calc(100vh - 146px - 90px);
   gap: 33px;
+  justify-content: flex-start;
 }
 
 h1, .h1 {

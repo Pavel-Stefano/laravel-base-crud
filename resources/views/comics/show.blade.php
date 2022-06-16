@@ -7,11 +7,11 @@
     <section>
         <div class="container fumetto">
             <div class="image">
-                <img src="{{$comic->thumb}}" alt="">
+                <img src="{{$fumetto->thumb}}" alt="">
             </div>
-            <div class="comic-content">
-                <h1>{{$comic->title}}</h1>
-                <p>{{$comic->description}}</p>
+            <div class="fumetto-content">
+                <h1>{{$fumetto->title}}</h1>
+                <p>{{$fumetto->description}}</p>
             </div>
         </div>
         

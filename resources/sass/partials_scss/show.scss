@@ -1,6 +1,7 @@
 .fumetto {
     height: calc((100vh - 146px) - 90px);
     gap: 33px;
+    justify-content: flex-start;
 }
 
 h1 {
