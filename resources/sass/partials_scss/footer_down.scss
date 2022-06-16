@@ -1,0 +1,24 @@
+.down-footer {
+    background: $bgGrigio;
+    height: 90px;
+}
+.container {
+    height: 100%;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+h2 {
+    color: $bgAzzurro;
+    text-transform: uppercase;
+}
+
+
+.btn-up a {
+    text-decoration: none;
+    padding: 11px 8px;
+    border: 2px solid $bgAzzurro;
+    color: $testoBianco;
+}

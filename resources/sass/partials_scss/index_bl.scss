@@ -1,0 +1,48 @@
+.bg_index {
+    background-color: #000;
+}
+
+#index_container {
+    position: relative;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+#index_container .btn-ab {
+    position: absolute;
+    top: -15px;
+}
+
+
+#index_container .card {
+    width: calc((100% / 4) - 20px);
+    margin: 10px;
+    background: none;
+}
+
+#index_container .card a img {
+    width: 100%;
+}
+
+#index_container .btn {
+        padding: 10px;
+        background: $bgAzzurro;
+        color: $testoBianco;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+}
+
+#index_container .load {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    padding: 10px 45px;
+}
+.card-content {
+    color: $testoBianco;
+}
+.card-content p {
+    color: $bgAzzurro;
+}

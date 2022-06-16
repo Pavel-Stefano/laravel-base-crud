@@ -1,0 +1,48 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+list-style-type: none;
+margin: 0 15px;
+font-size: 12px;
+text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+div .overflow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid $bgAzzurro;
+    opacity: 0;
+}
+
+// li a.active,
+a:hover div.overflow {
+    transition: 0,7s;
+    opacity: 1;
+}
+  
+.icon img {
+    width: 100px;
+    // transform: rotate(25deg);
+
+}
