@@ -20541,8 +20541,8 @@ div .overflow {
 }
 
 a:hover div.overflow {
-  transition: 0, 7s;
   opacity: 1;
+  transition: 1s;
 }
 
 .icon img {
@@ -20551,10 +20551,6 @@ a:hover div.overflow {
 
 .active {
   color: red;
-}
-
-.card-content a span {
-  padding-right: 90px;
 }
 
 .jumbo-main {
@@ -20601,9 +20597,10 @@ h2, .h2 {
 
 #index_container {
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 125px;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #index_container .btn-ab {
@@ -20631,27 +20628,44 @@ h2, .h2 {
 }
 
 #index_container .load {
-  position: relative;
+  position: absolute;
   left: 50%;
+  bottom: 35px;
   transform: translateX(-50%);
   margin-top: 50px;
   padding: 10px 45px;
 }
 
-.card-content {
+.card-content a {
   color: #fff;
+}
+
+.card-content p, a.modifica {
+  color: #0282f9;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .fumetto {
   height: calc(100vh - 146px - 90px);
+  min-height: 750px;
   gap: 33px;
   justify-content: flex-start;
+}
+
+.image img {
+  width: 100%;
 }
 
 h1, .h1 {
   margin-bottom: 45px;
 }
 
-.image img {
-  width: 235px;
+.fumetto-option {
+  display: flex;
+  justify-content: flex-end;
 }

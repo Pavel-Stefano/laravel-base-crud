@@ -36,8 +36,8 @@ div .overflow {
 
 // li a.active,
 a:hover div.overflow {
-    transition: 0,7s;
     opacity: 1;
+    transition: 1s;
 }
   
 .icon img {
@@ -48,8 +48,4 @@ a:hover div.overflow {
 
 .active {
     color: red;
-}
-
-.card-content a span {
-    padding-right: 90px;
 }

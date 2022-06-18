@@ -1,13 +1,20 @@
 .fumetto {
     height: calc((100vh - 146px) - 90px);
+    min-height: 750px;
     gap: 33px;
     justify-content: flex-start;
+}
+
+.image img {
+    width: 100%;
 }
 
 h1 {
     margin-bottom: 45px;
 }
 
-.image img {
-    width: 235px;
+.fumetto-option {
+    display: flex;
+    justify-content: flex-end;
 }
+
