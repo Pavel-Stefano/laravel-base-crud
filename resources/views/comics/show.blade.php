@@ -7,13 +7,13 @@
     <section>
         <div class="container fumetto">
             <div class="col-3 image">
-                <img src="{{$fumetto->thumb}}" alt="">
+                <img src="{{$comic->thumb}}" alt="">
             </div>
             <div class="col-9 fumetto-content">
-                <h1>{{$fumetto->title}}</h1>
-                <p>{{$fumetto->description}}</p>
+                <h1>{{$comic->title}}</h1>
+                <p>{{$comic->description}}</p>
                 <div class="fumetto-options">
-                    <form action="{{ route('comics.destroy', $fumetto->id)}}" method="POST">
+                    <form action="{{ route('comics.destroy', $comic->id)}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"> Cancella</button>
