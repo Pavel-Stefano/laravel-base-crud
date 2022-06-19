@@ -20555,7 +20555,10 @@ a:hover div.overflow {
 
 .jumbo-main {
   height: calc(100vh - 116px - 120px);
+  background-size: cover;
+  background-position: top center;
   background-color: #0282f9;
+  background-image: url(../img/jumbotron.jpg);
 }
 
 .jumbo-main img {

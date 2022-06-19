@@ -1,9 +1,9 @@
 .jumbo-main {
     height: calc((100vh - 116px) - 120px);
-    // background-size: cover;
-    // background-position: top center;
-    // background-image: url('assets(~public/img/jumbotron.jpg)');
+    background-size: cover;
+    background-position: top center;
     background-color: $bgAzzurro;
+    background-image: url(../img/jumbotron.jpg);
 
 }
 .jumbo-main img {

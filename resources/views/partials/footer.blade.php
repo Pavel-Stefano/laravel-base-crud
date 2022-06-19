@@ -2,7 +2,7 @@
     <div class="down-footer">
         <div class="container">
             <div class="btn-up">
-                <a href="/comics"> Torna ai fumetti</a>
+                <a href="/home"> DC COMICS</a>
             </div>
             <div class="socials">
                 <h2>Follow Us</h2>
